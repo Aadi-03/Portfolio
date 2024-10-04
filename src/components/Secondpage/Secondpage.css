@@ -1,0 +1,182 @@
+.secondpage {
+        display: flex;
+        background-color: #1E242B;
+        height: 100vh;
+
+        /* position: sticky;
+        top : 0; */
+        .profile-image {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .myimage {
+
+                        width: 350px;
+                        height: 350px;
+                        background-color: lightsteelblue;
+                        margin-right: 50px;
+                        transition: all 0.5s ease;
+                        border-radius: 50%;
+
+                        &:hover {
+                                box-shadow: 0px 0px 20px 1px white;
+                                transform: scale(1.02);
+                        }
+
+                }
+
+        }
+
+        .about {
+                flex: 1.5;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .about-container {
+                        display: flex;
+                        flex-direction: column;
+                        height: 450px;
+                        width: 700px;
+                        justify-content: space-around;
+
+                        .line-container {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .line {
+                                        height: 2px;
+                                        width: 500px;
+                                        background-color: #2AD87F;
+                                }
+
+                                h1 {
+                                        color: white;
+                                        letter-spacing: 1px;
+                                }
+                        }
+
+                        .wrapper {
+                                margin-top: 5px ;
+                                width: 100%;
+                                height: 100%;
+                        }
+
+                        .line__1,
+                        .line__2,
+                        .line__3,
+                        .line__4,
+                        .line__5, 
+                        .line__6,
+                        .line__7,
+                        .line__8,
+                        .line__9,
+                        .line__10{
+                                white-space: nowrap;
+                                overflow: hidden;
+                                color : white;
+                                /* hide text behind the cursor */
+                                margin: 0.5rem auto;
+                                font-family: "Major Mono Display", monospace;
+                                font-size: 20px;
+                                font-weight: bold; 
+                                border-right: 2px solid #1E242B;
+                                animation: animated-text__1 4s steps(30, end) 1s 1 normal both,
+                                        animated-cursor__1 800ms steps(40, end) 8;
+                        }
+                        .line__2 {
+                                animation-delay: 5s;
+                        }
+                        .line__3{
+                                animation-delay: 9s;
+                        }
+                        .line__4{
+                                animation-delay: 13s;
+                        }
+                        .line__5{
+                                animation-delay: 17s;
+                        }
+                        .line__6{
+                                animation-delay: 21s;
+                        }
+                        .line__7{
+                                animation-delay: 25s;
+                        }
+                        .line__8{
+                                animation-delay: 29s;
+                        }
+                        .line__9{
+                                animation-delay: 33s;
+                        }
+                        .line__10{
+                                animation-delay: 37s;
+                        }
+
+                        .buttons {
+                                display: flex;
+                                justify-content: space-between;
+                                width: 45%;
+
+                                a {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 50px;
+                                        width: 150px;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                        letter-spacing: 1px;
+                                }
+
+                                .btn1 {
+                                        background-color: #2AD87F;
+                                        color: #1E242B;
+                                        border: none;
+                                        transition: all 0.3s ease-in-out;
+                                        
+                                        &:hover{
+                                                border-radius: 20px;
+                                        }
+                                }
+                                
+                                .btn2 {
+                                        background-color: #1E242B;
+                                        border: 3px solid #2AD87F;
+                                        color: white;
+                                        transition: all 0.3s ease-in-out;
+                                        &:hover{
+                                                border-radius: 20px;
+                                        }
+                                }
+                        }
+                }
+
+        }
+
+}
+
+
+@keyframes animated-cursor__1 {
+        from {
+                border-right-color: #1E242B;
+        }
+
+        to {
+                border-right-color: rgba(255, 255, 255, 0.8);
+        }
+}
+
+@keyframes animated-text__1 {
+        from {
+                width: 0;
+        }
+
+        to {
+                width: 49rem;
+        }
+}
+
+

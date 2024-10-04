@@ -1,0 +1,37 @@
+.navbar{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        position : sticky;
+        top: 0;
+        background-color: #1E242B;
+        z-index: 2;
+
+        .menu{
+                display: flex;
+                height : 100%;
+                width : 50%;
+                justify-content: space-around;
+                align-items: center;
+
+
+                a{
+                        text-decoration: none;
+                        color : white;
+                        padding : 5px;
+                        width: 120px;
+                        text-align: center;
+                        transition : all 0.3s ease-in-out;
+                        border-radius: 20px;
+
+                        &:hover{
+                                background-color: #2AD87F;
+                                border-radius: 20px;
+                        }
+                }
+        }
+
+}

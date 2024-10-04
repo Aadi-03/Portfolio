@@ -1,0 +1,118 @@
+.education{
+        height: 100vh;
+        width: 100vw;
+        /* position: sticky;
+        top : 0; */
+        background-color: #1E242B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container{
+                display: flex;
+                flex-direction: column;
+                height: 70%;
+                width: 70%;
+
+                .line-container{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 30px;
+                        h1{
+                                color: white;
+                                letter-spacing: 1px;
+                                font-weight: bold;
+                        }
+                        .line{
+                                background-color: #2AD87F;
+                                height: 2px;
+                                width: 80%;
+                                margin: 10px 0;
+                        }
+
+                }
+
+                .education-content{
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+
+                        .details{
+                                width: 70%;
+                                display: flex;
+                                flex-direction: column;
+                                .ed-box{
+                                        width : 350px;
+                                        height : 150px;
+                                        border-radius: 30px;
+                                        background-color: #1E242B;
+                                        border: 3px solid #2AD87F;
+                                        transition: all 0.3s ease;
+                                        padding : 0px 30px;
+
+
+                                        h1{
+                                                color: #2AD87F;
+                                                font-size: 20px;
+                                                font-weight: bold;
+                                                margin: 10px 0;
+                                        }
+                                        ul{
+                                                color : white;
+                                                font-size: 15px;
+
+                                                .linked{
+                                                        display: flex;
+                                                        align-items: center;
+
+                                                        a{
+                                                                text-decoration: none;
+                                                                color: white;
+
+                                                        }
+
+                                                        .link{
+                                                                margin-left: 10px;
+                                                                margin-top: 3px;
+                                                                height : 15px;
+                                                                width: 15px;
+                                                        }
+                                                }
+                                        }
+                                        &:hover{
+                                                border: 3px solid #2AD87F;
+                                                transform: scale(1.05);
+                                        }
+
+
+                                }
+                                .ed-box:nth-child(even){
+                                        margin-left: auto;
+                                }
+                        }
+
+                        
+                        .timeline{
+                                position : relative;
+                                width: 3px;
+                                height: 100%;
+                                background-color: #2AD87F;
+                                left : 35%;
+                        }
+                        .aeroplane{
+                                position: sticky;
+                                top : 370px;
+                                width: 40px;
+                                height: 40px;
+                                left : 768px;
+                                transform: rotateZ(180deg);
+                                z-index: 1;
+                
+                        }
+                }
+                
+        }
+        
+}
+
