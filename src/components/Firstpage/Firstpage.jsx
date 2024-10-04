@@ -24,8 +24,8 @@ const Firstpage = () => {
                         <div className="right">
                                 <div className="links">
                                         <p>Contact Me</p>
-                                        <a href="mailto:aaditvavijayvats.sre2022@gmail.com" target='_blank'><img src="https://cdn-icons-png.flaticon.com/128/1384/1384007.png" alt="gmail" /></a>
-                                        <a href="https://wa.me/919027203505" target='_blank'><img src="https://cdn-icons-png.flaticon.com/128/6244/6244710.png" alt="whatsapp" /></a>
+                                        <a href="mailto:aaditvavijayvats.sre2022@gmail.com" ><img src="https://cdn-icons-png.flaticon.com/128/6244/6244710.png" alt="gmail" /></a>
+                                        <a href="https://wa.me/919027203505" target='_blank'><img src="https://cdn-icons-png.flaticon.com/128/1384/1384007.png" alt="whatsapp" /></a>
                                         <a href="https://www.linkedin.com/in/aaditva-vijay-vats-402644239" target='_blank'><img src="https://cdn-icons-png.flaticon.com/128/3669/3669739.png" alt="linkedin" /></a>
                                 </div>
 
