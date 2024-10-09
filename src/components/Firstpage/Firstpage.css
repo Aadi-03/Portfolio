@@ -128,7 +128,7 @@
         .personal-image {
                 position: absolute;
                 height: 500px;
-                right: 300px;
+                left : 50%;
                 bottom: 0px;
                 transition: all 0.5s ease-in-out;
 
@@ -155,7 +155,7 @@
         }
 
         .animation {
-                height: 50px;
+                height: 5.5%;
                 overflow: hidden;
                 margin-left: 1rem;
         }

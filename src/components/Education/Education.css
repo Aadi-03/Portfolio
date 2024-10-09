@@ -1,8 +1,5 @@
 .education{
         height: 100vh;
-        width: 100vw;
-        /* position: sticky;
-        top : 0; */
         background-color: #1E242B;
         display: flex;
         justify-content: center;
@@ -35,6 +32,7 @@
 
                 .education-content{
                         height: 100%;
+                        width: 100%;
                         display: flex;
                         justify-content: center;
 
@@ -43,7 +41,7 @@
                                 display: flex;
                                 flex-direction: column;
                                 .ed-box{
-                                        width : 350px;
+                                        width : 46%;
                                         height : 150px;
                                         border-radius: 30px;
                                         background-color: #1E242B;
@@ -105,7 +103,7 @@
                                 top : 370px;
                                 width: 40px;
                                 height: 40px;
-                                left : 768px;
+                                left : 50%;
                                 transform: rotateZ(180deg);
                                 z-index: 1;
                 
