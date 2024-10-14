@@ -1,0 +1,48 @@
+.navbar{
+        position: sticky;
+        top: 0;
+        color: white;
+        width: 100vw;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+
+        .container{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: white;
+                border-radius: 30px;
+                padding : 5px 10px;
+
+                a{
+                        color: white;
+                        text-decoration: none;
+                        margin: 0 2rem;
+                        transition: all 0.3s ease;
+
+                        img{
+                                width: 30px;
+                                height: 30px;
+
+                        }
+                        &:hover{
+                                transform: scale(1.1);
+                        }
+                }
+        }
+}
+
+@media screen and (max-width: 516px){
+        .navbar{
+                .container{
+                        a{
+                                margin: 0 1rem;
+                        }
+                }
+        }
+        
+}
+
