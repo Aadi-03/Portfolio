@@ -23,7 +23,7 @@ const Home = () => {
 
                                         <div className="buttons-holder">
                                                 <a href="#Projects">See My Work</a>
-                                                <a href="https://drive.google.com/file/d/139FUyctSBRig_UvbYKtMfqk74d6ae55p/view?usp=sharing" target="_blank">Resume</a>
+                                                <a href="https://drive.google.com/file/d/1yjoWaJ5VF5n4OgKvEr30W7o8sgqwRKdu/view?usp=sharing" target="_blank">Resume</a>
                                         </div>
 
                                 </div>
