@@ -1,6 +1,25 @@
 import './Home.css';
 import profile_image from "../../assets/images/Profile_image.jpg";
+import { useEffect, useState } from 'react';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../lib/firebase';
+
 const Home = () => {
+
+        const [resumelink , setResumelink] = useState();
+        const q = collection(db, 'Resume');
+
+        useEffect(() => {
+                const BringResume = async () => {
+                        const data = await getDocs(q);
+                        setResumelink(data.docs.map(doc => doc.data())[0].Link);
+                        
+                }
+                BringResume();
+                return () => {
+                        setResumelink([]);
+                }
+        }, []);
         return (
                 <div className="home">
                         <div className="holder">
@@ -23,7 +42,7 @@ const Home = () => {
 
                                         <div className="buttons-holder">
                                                 <a href="#Projects">See My Work</a>
-                                                <a href="https://drive.google.com/file/d/1yjoWaJ5VF5n4OgKvEr30W7o8sgqwRKdu/view?usp=sharing" target="_blank">Resume</a>
+                                                <a href= {resumelink} target="_blank">Resume</a>
                                         </div>
 
                                 </div>
