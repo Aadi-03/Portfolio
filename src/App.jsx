@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer'
 import Background from './components/Background/Background'
 import Navbar from './components/Navbar/Navbar'
 import Contact from './components/Contact/Contact'
+import Chatbot from './components/Chatbot/Chatbot'
 
 function App() {
   const [Loading , setLoading] = useState(true)
@@ -23,8 +24,9 @@ function App() {
     <>
       {Loading && < Loadingpage />}
       {!Loading && <Background />}
-      {!Loading && <Navbar />}
       <a id = "Home"></a>
+      {!Loading && <Navbar />}
+      {!Loading && <Chatbot />}
       {!Loading && <Home />}
       <a id = "About"></a>
       {!Loading && <About />}
@@ -37,6 +39,7 @@ function App() {
       <a id = "Connect"></a>
       {!Loading && <Contact />}
       {!Loading && < Footer />}
+
     </>
   )
 }

@@ -132,6 +132,38 @@
         .Loadingpage {
                 .nameplate {
                         width: 100%;
+                        .container{
+                                .profession{
+                                        height : 2em;
+                                        h1{
+                                                font-size: 1.5em;
+                                        }
+                                }
+                        }
+                }
+
+        }
+}
+
+@media screen and (max-width: 400px) {
+        .Loadingpage {
+                .nameplate {
+                        .Greet {
+                                font-size: 1.5rem;
+                        }
+                        .container{
+                                .profession{
+                                        height : 1.3em;
+                                        p{
+                                                font-size: 10px;
+                                                font-weight: normal;
+                                        }
+                                        h1{
+                                                font-size: 1.1em;
+                                        }
+                                }
+                        }
                 }
         }
+        
 }
